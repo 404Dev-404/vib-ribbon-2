@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://dw1eirdpg0otq"]
+
+[ext_resource type="Texture2D" uid="uid://be7xu2kb5k6x4" path="res://UI/bigLogoPlaceholder.png" id="1_1g3kd"]
+[ext_resource type="Script" path="res://demoStart.gd" id="2_3capd"]
+
+[node name="Title" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BigLogoPlaceholder" type="Sprite2D" parent="."]
+position = Vector2(563, 205)
+texture = ExtResource("1_1g3kd")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 494.0
+offset_top = 432.0
+offset_right = 594.0
+offset_bottom = 463.0
+text = "Enter Game"
+script = ExtResource("2_3capd")
